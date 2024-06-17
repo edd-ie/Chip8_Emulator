@@ -1,0 +1,3 @@
+X:/Code/C++/Chip8_Emulator/cmake-build-debug/CMakeFiles/Chip8_Emulator.dir
+X:/Code/C++/Chip8_Emulator/cmake-build-debug/CMakeFiles/edit_cache.dir
+X:/Code/C++/Chip8_Emulator/cmake-build-debug/CMakeFiles/rebuild_cache.dir

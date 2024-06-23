@@ -251,6 +251,18 @@ Chip8_Emulator_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Chip8_Emulator_SOURCE_DIR:STATIC=X:/Code/C++/Chip8_Emulator
 
+//mwindows for MinGW
+MINGW32_LIBRARY:STRING=mingw32;-mwindows
+
+//Path to a library.
+SDL2MAIN_LIBRARY:FILEPATH=X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a
+
+//Path to a file.
+SDL2_INCLUDE_DIR:PATH=X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2
+
+//Where the SDL2 Library can be found
+SDL2_LIBRARY:STRING=mingw32;-mwindows;X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a;X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2.dll.a
+
 
 ########################
 # INTERNAL cache entries
@@ -336,6 +348,8 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=X:/Code/C++/Chip8_Emulator
@@ -410,6 +424,11 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding SDL2
+FIND_PACKAGE_MESSAGE_DETAILS_SDL2:INTERNAL=[mingw32;-mwindows;X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a;X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2.dll.a][X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2][v()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+SDL2_LIBRARY_TEMP:INTERNAL=mingw32;-mwindows;X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a;X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2.dll.a
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 

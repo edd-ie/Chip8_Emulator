@@ -56,6 +56,20 @@ build CMakeFiles/Chip8_Emulator.dir/main.cpp.obj: CXX_COMPILER__Chip8_Emulator_u
   OBJECT_DIR = CMakeFiles\Chip8_Emulator.dir
   OBJECT_FILE_DIR = CMakeFiles\Chip8_Emulator.dir
 
+build CMakeFiles/Chip8_Emulator.dir/Chip8.cpp.obj: CXX_COMPILER__Chip8_Emulator_unscanned_Debug X$:/Code/C++/Chip8_Emulator/Chip8.cpp || cmake_object_order_depends_target_Chip8_Emulator
+  DEP_FILE = CMakeFiles\Chip8_Emulator.dir\Chip8.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IX:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2
+  OBJECT_DIR = CMakeFiles\Chip8_Emulator.dir
+  OBJECT_FILE_DIR = CMakeFiles\Chip8_Emulator.dir
+
+build CMakeFiles/Chip8_Emulator.dir/Platform.cpp.obj: CXX_COMPILER__Chip8_Emulator_unscanned_Debug X$:/Code/C++/Chip8_Emulator/Platform.cpp || cmake_object_order_depends_target_Chip8_Emulator
+  DEP_FILE = CMakeFiles\Chip8_Emulator.dir\Platform.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IX:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2
+  OBJECT_DIR = CMakeFiles\Chip8_Emulator.dir
+  OBJECT_FILE_DIR = CMakeFiles\Chip8_Emulator.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Chip8_Emulator
@@ -64,7 +78,7 @@ build CMakeFiles/Chip8_Emulator.dir/main.cpp.obj: CXX_COMPILER__Chip8_Emulator_u
 #############################################
 # Link the executable Chip8_Emulator.exe
 
-build Chip8_Emulator.exe: CXX_EXECUTABLE_LINKER__Chip8_Emulator_Debug CMakeFiles/Chip8_Emulator.dir/main.cpp.obj | X$:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a X$:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2.dll.a
+build Chip8_Emulator.exe: CXX_EXECUTABLE_LINKER__Chip8_Emulator_Debug CMakeFiles/Chip8_Emulator.dir/main.cpp.obj CMakeFiles/Chip8_Emulator.dir/Chip8.cpp.obj CMakeFiles/Chip8_Emulator.dir/Platform.cpp.obj | X$:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a X$:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2.dll.a
   FLAGS = -g
   LINK_LIBRARIES = -lmingw32  -mwindows  X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a  X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Chip8_Emulator.dir

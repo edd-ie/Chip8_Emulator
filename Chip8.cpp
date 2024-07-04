@@ -6,6 +6,7 @@
 #include <fstream>
 #include <chrono>
 #include <random>
+#include <cstring>
 #include "Chip8.h"
 
 class Chip8

@@ -11,20 +11,20 @@ int main(int argc, char *argv[])
         std::exit(EXIT_FAILURE);
     }
 
-    int videoScale = std::stoi(argv[1]);
-    int cycleDelay = std::stoi(argv[2]);
+    const int videoScale = std::stoi(argv[1]);
+    const int cycleDelay = std::stoi(argv[2]);
     char const* romFilename = argv[3];
 
     Platform platform("CHIP-8 Emulator",
-        VIDEO_WIDTH * videoScale,
-        VIDEO_HEIGHT * videoScale,
+        static_cast<int>(VIDEO_WIDTH) * videoScale,
+        static_cast<int>(VIDEO_HEIGHT) * videoScale,
         VIDEO_WIDTH,
         VIDEO_HEIGHT);
 
     Chip8 chip8;
     chip8.LoadROM(romFilename);
 
-    int videoPitch = sizeof(chip8.video[0]) * VIDEO_WIDTH;
+    constexpr int videoPitch = sizeof(chip8.video[0]) * VIDEO_WIDTH;
 
     auto lastCycleTime = std::chrono::high_resolution_clock::now();
     bool quit = false;
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
         auto currentTime = std::chrono::high_resolution_clock::now();
         float dt = std::chrono::duration<float, std::chrono::milliseconds::period>(currentTime - lastCycleTime).count();
 
-        if (dt > cycleDelay)
+        if (dt > static_cast<float>(cycleDelay))
         {
             lastCycleTime = currentTime;
 

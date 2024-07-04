@@ -1399,7 +1399,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "mingw32;-mwindows;X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a;X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2.dll.a"
+			"value" : "mingw32;-mwindows;X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a;mingw32;-mwindows;X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a;mingw32;-mwindows;X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a;X:/Code/C++/SDL2_mingw/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2.dll.a"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

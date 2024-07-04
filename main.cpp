@@ -1,6 +1,6 @@
 #include <iostream>
-#include <SDL.h>
 #include "Chip8.cpp"
+#include "Platform.cpp"
 
 int main(int argc, char *argv[])
 {

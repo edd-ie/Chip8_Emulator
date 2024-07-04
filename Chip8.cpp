@@ -703,5 +703,41 @@ public:
     void OP_NULL()
     {}
 
+
+    // Fetch Decode Execute
+    /**
+    * Fetch the next instruction in the form of an opcode
+    * Decode the instruction to determine what operation needs to occur
+    * Execute the instruction
+    *
+    * The decoding and executing are done with the function pointers.
+    * Get the first digit of the opcode with a bitmask,
+    * Shift it over so that it becomes a single digit from $0 to $F,
+    * Use that as index into the function pointer array.
+     */
+    void Cycle()
+    {
+        // Fetch
+        opcode = (memory[pc] << 8u) | memory[pc + 1];
+
+        // Increment the PC before we execute anything
+        pc += 2;
+
+        // Decode and Execute
+        ((this)->*(table[(opcode & 0xF000u) >> 12u]))();
+
+        // Decrement the delay timer if it's been set
+        if (delayTimer > 0)
+        {
+            --delayTimer;
+        }
+
+        // Decrement the sound timer if it's been set
+        if (soundTimer > 0)
+        {
+            --soundTimer;
+        }
+    }
+
 };
 

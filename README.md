@@ -73,4 +73,5 @@ The project is licensed under the [GNU Affero General Public License v3.0](https
 ## <a id="sources">Sources</a>
 
 Research website - [Cowgod's Chip-8 Technical Reference v1.0](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM)
+
 Portions of the website were inspired by - [Laurens Muller (CHIP-8 interpreter)](https://multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/)

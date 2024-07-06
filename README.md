@@ -41,8 +41,8 @@ To run the application you will require 3 values
 ```
 - **cmd1** - integer screen scaling, varies with monitors. 
   - Tested with 10 - 40.
-- **cmd2** - game run time, varies with program, your choice. 
-  - Tested with 0.0 - 5.0
+- **cmd2** - game run speed, varies with program, your choice. 
+  - Tested with 0.4 - 5.0 (lower == faster)
 - **cmd** - ROM location, you can add yours. Some ROMs have been sourced in roms folder. 
   - Pick one and format it in this format ```./roms/<rom_file>.ch8```
 
